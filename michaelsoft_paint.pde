@@ -1,12 +1,12 @@
 int red;
 int green;
 int blue;
-PFont mono;
 int strokesize;
 
 void setup() {
+  fullScreen();
 frameRate(999999);
-size(1000,1000);
+//size(1000,1000);
 background(255);
 }
 
@@ -47,7 +47,7 @@ void mouseReleased()
     
     strokesize = 1;
     }
-    if (mouseX > 942 && mouseX < 957 && mouseY > 100 && mouseY < 115) {
+    if (mouseX > 942 && mouseX < 957 && mouseY > 92 && mouseY < 107) {
       strokesize = 5;
     }
 }
@@ -93,8 +93,8 @@ rect(942, 92,15,15);
 ellipse(950, 100, 10,10);
 //strokeWeight(1);
 //point(20,20);
-line(0,175,1000,175);
-line(0,25,1000,25);
+line(0,175,2000,175);
+line(0,25,2000,25);
 
 //CLEAR
 if (keyPressed && key == 'k' || key == 'K')
